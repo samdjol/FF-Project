@@ -1,0 +1,28 @@
+name: nfl-analysis
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python version
+  - python=3.10
+
+  # Key data handling libraries
+  - numpy
+  - pandas
+
+  # For reading the nfl_data_py files
+  - fastparquet
+
+  # Common data science & plotting libraries
+  - scikit-learn
+  - matplotlib
+  - seaborn
+
+  # For interactive work
+  - jupyterlab
+  - notebook
+
+  # Pip, in case you need packages not on Conda
+  - pip
+  - pip:
+      - nfl-data-py
